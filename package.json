@@ -76,7 +76,9 @@
     "generate": "cross-env TS_NODE_PROJECT='./internals/ts-node.tsconfig.json' plop --plopfile internals/generators/plopfile.ts",
     "prettify": "prettier --write",
     "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -111,7 +113,28 @@
   "devDependencies": {
     "@babel/preset-typescript": "7.16.5",
     "@commitlint/cli": "16.0.1",
+    "@storybook/addon-actions": "6.4.9",
+    "@storybook/addon-essentials": "6.4.9",
+    "@storybook/addon-links": "6.4.9",
+    "@storybook/builder-webpack5": "6.4.9",
+    "@storybook/manager-webpack5": "6.4.9",
+    "@storybook/node-logger": "6.4.9",
+    "@storybook/preset-create-react-app": "4.0.0",
+    "@storybook/react": "6.4.9",
     "jest": "27.4.5",
-    "ts-jest": "27.1.2"
+    "ts-jest": "27.1.2",
+    "webpack": "5.65.0"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   }
 }
