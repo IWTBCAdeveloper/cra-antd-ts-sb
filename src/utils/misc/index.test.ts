@@ -6,7 +6,7 @@ describe('utils', () => {
       const obj = {
         '1': 1,
         '2': 2,
-      }; // IEpisodeModel
+      };
       const result = {
         '1': 1,
         '2': 2,
@@ -20,7 +20,7 @@ describe('utils', () => {
         '2': 2,
         '3': 3,
         '4': 4,
-      }; // IEpisodeModel
+      };
       const result = {
         '1': 1,
         '2': 2,
