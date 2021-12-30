@@ -4,7 +4,7 @@ export function cloneDeep<T>(a: T): T {
 
 export function cloneObject(a: object, ...p: Array<string>): object {
   const r = {};
-  p?.forEach(element => {
+  p?.forEach((element) => {
     // @ts-ignore
     r[element] = a[element];
   });
@@ -51,7 +51,7 @@ export function isMobile() {
     /Windows Phone/i,
   ];
 
-  return toMatch.some(toMatchItem => {
+  return toMatch.some((toMatchItem) => {
     return navigator.userAgent.match(toMatchItem);
   });
 }
