@@ -10,7 +10,6 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import 'antd/dist/antd.min.css';
 
 import { GlobalStyle } from 'styles/global-styles';
 
