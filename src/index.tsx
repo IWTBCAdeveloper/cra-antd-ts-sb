@@ -18,6 +18,8 @@ import 'sanitize.css/sanitize.css';
 // Antd styling
 import 'antd/dist/antd.min.css';
 
+import 'utils/axios/config';
+
 // Import root app
 import { App } from 'app';
 
